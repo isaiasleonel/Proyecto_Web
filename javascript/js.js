@@ -1,11 +1,11 @@
 'use strict';
 
 function captcha(ancho) {
-	var resultado = '';
-	var characters =
+	let resultado = '';
+	let characters =
 		'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-	var longCaracteres = characters.length;
-	for (var i = 0; i < ancho; i++) {
+	let longCaracteres = characters.length;
+	for (let i = 0; i < ancho; i++) {
 		resultado += characters.charAt(Math.floor(Math.random() * longCaracteres));
 	}
 	return resultado;
