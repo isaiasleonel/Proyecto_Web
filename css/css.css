@@ -9,7 +9,23 @@
 	--color-letras: #e03e0dfd;
 	--color-nav: linear-gradient(#e03e0d, rgb(12 4 0), #e03e0d);
 }
-
+body {
+	margin: 0 auto;
+	background-image: url(../imagenes/Fondo-zapatilla.jpeg);
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+p {
+	color: var(--color-letras);
+	font-size: 0.8rem;
+}
+h1,
+h2,
+h3 {
+	color: var(--color-letras);
+	text-align: center;
+	font-size: large;
+}
 .conteiner-padre {
 	width: 100%;
 	margin: 0 auto;
@@ -34,14 +50,218 @@ footer {
 	grid-area: footer;
 }
 
-section {
-	max-width: 100%;
+/* -------------------------Header------------- */
+.u-list-nav {
+	display: flex;
+	flex-direction: column-reverse;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: none;
+	background-color: var(--color-black-tercera-capa);
+}
+.div-header-logo {
+	text-align: center;
+}
+.u-list-nav.show {
+	display: flex;
+}
+
+.btn_menu {
+	background-image: var(--color-nav);
+	color: var(--color-letras);
+}
+.logo {
+	width: 30%;
+	height: 80px;
+}
+nav ul li {
+	list-style: none;
+}
+nav a {
+	text-decoration: none;
+	color: var(--color-letras);
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-weight: 800;
+}
+/* --------------------------footer-------------------- */
+footer {
+	color: #e03f0dd3;
+	background-color: var(--color-black-tercera-capa);
+	height: 40vmin;
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+}
+.box-footer-1,
+.box-footer-2 {
+	flex-direction: column;
+	display: flex;
+}
+/* ---------------------------PAGINA INDEX------------ */
+/* -------------------Section-Index------------- */
+.section-index {
+	padding: 0 2%;
+}
+.div-lista {
+	display: flex;
+	justify-content: center;
+}
+.List-marcas {
+	width: 40%;
+	padding: 0px;
+}
+.List-marcas li {
+	list-style-type: disclosure-closed;
+	list-style-position: inside;
+	color: var(--color-letras);
+	padding: 2.5%;
+	background-image: var(--color-nav);
+	margin: 3% auto;
+}
+.figura {
+	text-align: center;
+}
+aside {
+	padding: 2%;
+}
+aside figcaption {
+	color: var(--color-letras);
+	text-align: center;
+}
+figure iframe {
+	border-radius: 30px;
+	border: var(--color-letras) 5px solid;
+}
+/* --------------------Aside-marcas mas vendida-------- */
+.figura {
+	margin: 2%;
 }
 iframe {
-	width: 80%;
-	height: 250px;
+	max-width: 100%;
+	max-height: 180px;
 }
-/* ------------------------------------MOBILE FIRTS --------------------- */
+/* -----------------------PAGINA CATALOGO------- */
+/* ------------------------Tabla catalogo---------- */
+figure img {
+	width: 100%;
+	height: 100px;
+}
+td figure {
+	margin: 0;
+}
+.section-catalogo {
+	padding: 4% 5%;
+}
+.section-catalogo h1 {
+	font-size: 1.25rem;
+	margin: 5px 0%;
+}
+.table-ranking {
+	background-color: var(--color-black-tercera-capa);
+	border: 5px solid;
+}
+.table-ranking thead {
+	background-image: var(--color-nav);
+	font-size: 1.3rem;
+}
+td {
+	color: var(--color-letras);
+	text-align: center;
+	border: solid 2px;
+}
+table,
+td,
+tr {
+	border-collapse: collapse;
+}
+td figure {
+	max-width: 100%;
+	margin: auto;
+}
+td figure img {
+	height: 80px;
+	width: 100%;
+}
+tbody tr {
+	cursor: pointer;
+}
+.form-tabla {
+	width: 60%;
+	max-height: 180px;
+	padding: 2%;
+	background-image: var(--color-nav);
+	border: var(--color-letras) 2px solid;
+}
+.inputs input {
+	margin: 2% 0;
+	width: 95%;
+	background-color: var(--color-black-tercera-capa);
+}
+.aside-tabla-dinamica {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.tabla-dinamica {
+	margin: 2% 0;
+	width: 65%;
+	background-color: var(--color-black-tercera-capa);
+}
+.botones {
+	display: flex;
+	padding-top: 3%;
+	justify-content: space-around;
+	height: 20px;
+}
+.botones button {
+	background-image: var(--color-nav);
+	color: var(--color-letras);
+	font-weight: 600;
+	height: 26px;
+}
+/* --------------------PAGINA CONTACTO------------- */
+/* -----------------------------Formulario--------------------------- */
+.div-sucursales {
+	padding: 0 2%;
+}
+.form-contacto {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+	padding: 2%;
+	background-image: var(--color-nav);
+	border: var(--color-letras) 2px solid;
+}
+.form-contacto select {
+	background: var(--color-black-tercera-capa);
+	color: var(--color-letras);
+}
+.div-box-table {
+	padding: 0 0 2% 0;
+}
+input {
+	width: 85%;
+	margin: 1.5%;
+	color: var(--color-letras);
+	background-color: var(--color-panel-background);
+	height: 20px;
+}
+#enviar {
+	width: 40%;
+	height: 30px;
+	font-weight: 900;
+	background-image: var(--color-nav);
+}
+form span {
+	color: black;
+}
+
+/* -----------------------DESKTOP---------------------------- */
 @media only screen and (min-width: 600px) {
 	.conteiner-padre {
 		width: 100%;
@@ -56,7 +276,6 @@ iframe {
 		background-size: 100% auto;
 		background-attachment: fixed;
 	}
-
 	p {
 		color: var(--color-letras);
 		font-size: 1rem;
@@ -68,25 +287,40 @@ iframe {
 		text-align: center;
 		font-size: large;
 	}
-
 	/* ----------------------header--------------------- */
-	nav {
+	header {
+		max-height: 90px;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
 		background-image: var(--color-nav);
+	}
+	nav {
+		width: 82%;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
 	}
-
+	.div-header-logo {
+		width: 18%;
+	}
+	.u-list-nav {
+		background-color: unset;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
 	nav a {
-		/* corregir por % */
-		padding: 1%;
 		text-decoration: none;
 		color: var(--color-letras);
 		font-weight: bold;
 		font-size: 1.3rem;
 		text-transform: uppercase;
 	}
-
+	.btn_menu {
+		display: none;
+	}
 	.logo {
 		width: auto;
 		height: 70px;
@@ -95,66 +329,37 @@ iframe {
 	.section-index {
 		padding: 0 2%;
 	}
-	.div-lista {
-		display: flex;
-		justify-content: center;
+	.List-marcas {
+		width: 60%;
 	}
 	ul {
 		width: 40%;
 		padding: 0px;
 	}
-
-	li {
-		list-style-type: disclosure-closed;
-		list-style-position: inside;
-		color: var(--color-letras);
-		padding: 2.5%;
-		background-image: var(--color-nav);
-		margin: 3% auto;
+	.List-marcas li {
+		margin: 1% auto;
 	}
-	.figura {
-		text-align: center;
-	}
-	aside {
-		padding: 2%;
-	}
-	aside figcaption {
+	.section aside figcaption {
 		color: var(--color-letras);
 		text-align: center;
 	}
 	figure iframe {
-		border-radius: 30px;
-		border: var(--color-letras) 5px solid;
+		max-width: 80%;
+		height: 650px;
 	}
-
 	/* -------------------------------tabla----------------------- */
 	.section-catalogo {
-		display: flex;
-		justify-content: center;
 		margin: 0px auto;
 		padding: 2%;
 	}
-
 	.table-ranking {
-		background-color: var(--color-black-tercera-capa);
-		max-width: 50%;
-		border: 5px solid;
-	}
-
-	.table-ranking thead {
-		background-image: var(--color-nav);
-		font-size: 1.3rem;
+		margin: auto;
+		max-width: 80%;
 	}
 	td {
-		color: var(--color-letras);
 		text-align: center;
 		border: solid 2px;
 		border-inline-style: none;
-	}
-	table,
-	td,
-	tr {
-		border-collapse: collapse;
 	}
 	tr,
 	td {
@@ -186,17 +391,47 @@ iframe {
 	tbody tr {
 		cursor: pointer;
 	}
+	.form-tabla {
+		width: 50%;
+		height: 100px;
+		display: grid;
+		grid-template-areas:
+			'input input input'
+			'button button button';
+		grid-template-rows: 50% 50%;
+		grid-template-columns: 33% 33% 33%;
+		padding: 1.7%;
+		background-image: var(--color-nav);
+		border: var(--color-letras) 2px solid;
+		border-radius: 10px;
+	}
+	.inputs {
+		display: flex;
+		grid-area: input;
+	}
+	.aside-tabla-dinamica {
+		justify-content: center;
+		width: 95%;
+	}
+	.tabla-dinamica {
+		max-width: 64%;
+		width: 100%;
+		background-color: var(--color-black-tercera-capa);
+	}
+	.botones {
+		grid-area: button;
+	}
 	/* ------------------------Pagina de contacto--------------------- */
 	/* -----------------------------Formulario--------------------------- */
 	.div-sucursales {
 		padding: 0 2%;
 	}
-	form {
+	.form-contacto {
 		margin: auto;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		width: 30%;
+		width: 50%;
 		padding: 2%;
 		background-image: var(--color-nav);
 		border: var(--color-letras) 2px solid;
@@ -205,7 +440,7 @@ iframe {
 	.div-box-table {
 		padding: 0 0 2% 0;
 	}
-	input {
+	.form-contacto input {
 		width: 65%;
 		margin: 1.5%;
 		color: var(--color-letras);
@@ -221,7 +456,6 @@ iframe {
 	form span {
 		color: black;
 	}
-
 	/* --------------------------footer-------------------- */
 	footer {
 		color: #e03f0dd3;

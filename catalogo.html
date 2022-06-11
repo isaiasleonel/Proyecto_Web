@@ -10,14 +10,20 @@
 	<body>
 		<div class="conteiner-padre">
 			<header>
-				<nav>
+				<div class="div-header-logo">
 					<a href="index.html"><img  class="logo" src="imagenes/logo.png"></img></a>
-					<a href="catalogo.html">Catalogo</a>
-					<a href="contacto.html">Contacto</a>
+					<div class="btn_menu"><a><strong>MENÚ</strong></a></div>
+				</div>
+				<nav>
+					<ul class="u-list-nav">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="catalogo.html">Catalogo</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
 				</nav>
 			</header>
-				<h1>Lo mas buscados en nuestro mercado</h1>
 			<section class="section-catalogo">
+				<h1>Lo mas buscados en nuestro mercado</h1>
 				<table class="table-ranking">
 					<thead>
 						<tr>
@@ -153,6 +159,36 @@
 					</tbody>
 				</table>
 			</section>
+			<aside class="aside-tabla-dinamica">
+				<form class="form-tabla">
+					<div class="inputs">
+						<input type="text" name="zapato" class="shoe-type" placeholder="Tipo de zapato">
+						<input type="text" name="genero" class="shoe-genre"placeholder="Genero">
+						<input type="number" name="talle" class="shoe-size" placeholder="Talle">
+					</div>
+					<div class="botones">
+						<button id="btn-agregar">Agregar</button>
+						<button id="btn-agregar3">Agregar x3</button>
+						<button id="btn-borrar">Borrar todo</button>
+					</div>
+				</form>
+				<table class="tabla-dinamica">
+					<thead>
+						<tr>
+							<td>Tipo de zapato</td>
+							<td>Genero</td>
+							<td>Talle</td>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+						<tr>
+							<td>Deportiva</td>
+							<td>Masculino</td>
+							<td>37</td>
+						</tr>
+					</tbody>
+				</table>
+			</aside>
 		<footer>
 			<div class="box-footer-1">
 				<div><span> Nosotros</span></div>
@@ -172,6 +208,8 @@
 			</div>		
 			</footer>
 		</div>
-	
+		<script type="text/javascript" src="javascript/addShoes.js"></script>
+		<script type="text/javascript" src="javascript/listaDesplegable.js"></script>
+
 	</body>
 </html>

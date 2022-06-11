@@ -10,10 +10,16 @@
 	<body>
 		<div class="conteiner-padre">
 			<header>
-				<nav>
+				<div class="div-header-logo">
 					<a href="index.html"><img  class="logo" src="imagenes/logo.png"></img></a>
-					<a href="catalogo.html">Catalogo</a>
-					<a href="contacto.html">Contacto</a>
+					<div class="btn_menu"><a><strong>MENÚ</strong></a></div>
+				</div>
+				<nav>
+					<ul class="u-list-nav">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="catalogo.html">Catalogo</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
 				</nav>
 			</header>
 			<section class="div-sucursales">	
@@ -23,7 +29,7 @@
 			</section>
 			<div class="div-box-table">
 				<h2>Ingrese sus datos para recibir noticias sobre nosotros!</h2>
-				<form>
+				<form class="form-contacto">
 					<input type="text" id="Nombre" name="nombre" value="" placeholder="Nombre"/>
 					<input type="text" id="Apellido" name="apellido" value="" placeholder="Apellido">
 					<input type="email" id="Email" name="email" placeholder="E-mail">
@@ -57,6 +63,7 @@
 				</div>		
 			</footer>
 		</div>
+		<script type="text/javascript" src="javascript/listaDesplegable.js"></script>
 		<script type="text/javascript" src="javascript/js.js"></script>
 	</body>
 </html>
