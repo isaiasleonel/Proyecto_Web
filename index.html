@@ -1,56 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>INICIO</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 	<link rel="stylesheet" href="css/css.css" />
 </head>
 <body>
 	<div class="conteiner-padre">
 		<header>
-			<div class="div-header-logo">
-				<a href="index.html"><img  class="logo" src="imagenes/logo.png"></img></a>
-				<div class="btn_menu"><a><strong>MENÚ</strong></a></div>
-			</div>
-			<nav>
-				<ul class="u-list-nav">
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="catalogo.html">Catalogo</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
+				<div class="div-header-logo">
+					<a><img  class="logo" src="imagenes/logo.png"></img></a>
+					<div class="btn_menu"><a><strong>MENÚ</strong></a></div>
+				</div>
+				<nav>
+					<ul class="u-list-nav">
+					<li><a id="index" >Home</a></li>
+					<li><a id="catalogo">Catalogo</a></li>
+					<li><a id="contacto" >Contacto</a></li>
+					</ul>
+				</nav>
 			</header>
-		<section class="section-index">
-			<article>
-				<h1>DUBAI</h1>
-				<p>
-				Dubai es un emprendimiento que creamos 2 amigos de Tandil buscando generar un impacto positivo en la sociedad.
-				Queremos ser algo más que una marca de calzado. Queremos hacer negocios de una forma diferente, con compromiso social y ambiental. 
-				Sin traicionar nuestros valores y disfrutar mientras hacemos lo que más nos gusta.
-				</p>
-			</article>
-			<h2>Nuestras marcas mas vendidas</h2>
-			<div class="div-lista">
-				<ul class="List-marcas">
-					<li>Oxford</li>
-					<li>Columbia</li>
-					<li>Lucky Brand Atly</li>
-					<li>Stacy Adams</li>
-				</ul>
-			</div>
-		</section>
-		<aside>
-				<h3>Lo que fue el año 2021</h3>
-				<figure class="figura">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/hoCsjdgZlsg" 
-					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen>
-					</iframe>
-				</figure>
-				<figcaption> Moda 2021 para mujeres </figcaption>
-		</aside>
+			<div id="partial-render"></div>
 		<footer>
 			<div class="box-footer-1">
 				<div><span> Nosotros</span></div>
@@ -69,8 +41,11 @@
 				<div><span> Como comprar </span></div>
 			</div>
 		</footer>
-	</div>
+			</div>
 	<script type="text/javascript" src="javascript/listaDesplegable.js"></script>
-	<script type="text/javascript" src="javascript/js.js"></script>
+	<!-- <script type="text/javascript" src="javascript/js.js"></script> -->
+	<script type="text/javascript" src="javascript/partialRender.js"></script>
+	<!-- <script type="text/javascript" src="javascript/addShoes.js"></script> -->
+
 </body>
 </html>

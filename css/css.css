@@ -207,7 +207,7 @@ tbody tr {
 }
 .tabla-dinamica {
 	margin: 2% 0;
-	width: 65%;
+	width: 90%;
 	background-color: var(--color-black-tercera-capa);
 }
 .botones {
@@ -216,12 +216,36 @@ tbody tr {
 	justify-content: space-around;
 	height: 20px;
 }
-.botones button {
+.botones button,
+.btn-delete,
+.btn-edit {
 	background-image: var(--color-nav);
 	color: var(--color-letras);
 	font-weight: 600;
 	height: 26px;
 }
+section.filtro {
+	background-image: var(--color-nav);
+	border: solid 2px;
+	border-color: #e03e0d;
+	margin: 5%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 4%;
+}
+
+label.selec-talle {
+	color: var(--color-letras);
+	margin-bottom: 5%;
+}
+
+select#SelecTalle,
+select option {
+	background: var(--color-black-tercera-capa);
+	color: var(--color-letras);
+}
+
 /* --------------------PAGINA CONTACTO------------- */
 /* -----------------------------Formulario--------------------------- */
 .div-sucursales {
@@ -269,6 +293,12 @@ form span {
 		background: var(--color-panel-background);
 		display: grid;
 		/* grid-template-columns: ; */
+	}
+	a {
+		cursor: pointer;
+	}
+	a:hover {
+		background-color: black;
 	}
 	.conteiner-padre {
 		display: grid;
@@ -400,14 +430,10 @@ form span {
 		cursor: pointer;
 	}
 	.form-tabla {
+		display: flex;
+		flex-direction: column;
 		width: 30%;
-		height: 150px;
-		display: grid;
-		grid-template-areas:
-			'input input input'
-			'button button button';
-		grid-template-rows: 50% 50%;
-		grid-template-columns: 33% 33% 33%;
+		height: 105px;
 		padding: 1.7%;
 		background-image: var(--color-nav);
 		border: var(--color-letras) 2px solid;

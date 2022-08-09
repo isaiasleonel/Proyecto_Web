@@ -1,11 +1,11 @@
 'use strict';
 
-function captcha(ancho) {
-	let resultado = '';
-	let characters =
+function captcha(length) {
+	var resultado = '';
+	var characters =
 		'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-	let longCaracteres = characters.length;
-	for (let i = 0; i < ancho; i++) {
+	var longCaracteres = characters.length;
+	for (var i = 0; i < length; i++) {
 		resultado += characters.charAt(Math.floor(Math.random() * longCaracteres));
 	}
 	return resultado;
@@ -15,8 +15,8 @@ document.querySelector('#captchaResult').innerHTML = captcha(5);
 let enviar = document.querySelector('#enviar');
 enviar.addEventListener('click', verificarFormulario);
 
-function verificarFormulario(e) {
-	e.preventDefault();
+function verificarFormulario() {
+	event.preventDefault();
 	let captchaInput = document.querySelector('#inpCaptcha');
 	let captchaGenerado = document.querySelector('#captchaResult');
 	let datosRegis = document.querySelector('#datosRegis');
@@ -33,6 +33,7 @@ function verificarFormulario(e) {
 	let apellido = document.querySelector('#Apellido');
 	let email = document.querySelector('#Email');
 	if (nombre.value === '' || apellido.value === '' || email.value === '') {
+		event.preventDefault();
 		datosRegis.innerHTML = 'Por favor rellene todas las casillas';
 	}
 }
